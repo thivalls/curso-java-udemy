@@ -1,4 +1,4 @@
-package main;
+package operators;
 
 
 import java.util.Locale;
@@ -13,6 +13,8 @@ public class MainExercises {
         // exec3(sc);
         // exec4(sc);
         exec5(sc);
+
+        sc.close();
     }
 
     public static void exec2(Scanner sc) {
