@@ -6,15 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="exec-1 (1)" />
-        <module name="exec-1" />
-        <module name="vector" />
+        <module name="bank" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="exec-1" target="11" />
-      <module name="exec-1 (1)" target="11" />
-      <module name="vector" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
