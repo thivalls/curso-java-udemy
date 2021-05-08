@@ -46,13 +46,7 @@ public class Main {
             account.withDraw(saque);
             System.out.println(account);
         }
-
-
-
-
-
-
-
+        
         sc.close();
     }
 }
