@@ -1,6 +1,6 @@
-package application.entities;
+package application.program1.entities;
 
-import application.entities.enums.WorkerLevel;
+import application.program1.entities.enums.WorkerLevel;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

@@ -1,9 +1,13 @@
-package application;
+package application.program1;
 
-import application.entities.Department;
-import application.entities.HourContract;
-import application.entities.Worker;
-import application.entities.enums.WorkerLevel;
+import application.program1.entities.Department;
+import application.program1.entities.HourContract;
+import application.program1.entities.Worker;
+import application.program1.entities.enums.WorkerLevel;
+import application.program2.entities.Client;
+import application.program2.entities.OrderItem;
+import application.program2.entities.Order;
+import application.program2.entities.enums.OrderStatus;
 
 import java.math.BigDecimal;
 import java.text.ParseException;

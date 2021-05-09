@@ -1,4 +1,4 @@
-package application.entities;
+package application.program1.entities;
 
 public class Department {
     private String name;
