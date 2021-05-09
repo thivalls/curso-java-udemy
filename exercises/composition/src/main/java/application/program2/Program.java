@@ -19,6 +19,7 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat clientBirthday = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
 
         System.out.println("Seja bem vindo ao sistema de pedidos VALLS STORE: ");
@@ -57,9 +58,9 @@ public class Program {
         }
 
         System.out.println("ORDER SUMMARY");
-        System.out.println("ORDER DATE: " + order.getCreatedAt());
+        System.out.println("ORDER DATE: " + sdf.format(order.getCreatedAt()));
         System.out.println("ORDER STATUS " + order.getStatus());
-        System.out.println("CLIENT: " + order.getClient().getName() + "(" + order.getClient().getBithday() + ") - " + order.getClient().getEmail());
+        System.out.println("CLIENT: " + order.getClient().getName() + "(" + clientBirthday.format(order.getClient().getBithday()) + ") - " + order.getClient().getEmail());
         System.out.println("ORDER ITEMS");
         for (OrderItem orderItem : order.getItems()) {
             System.out.println(
