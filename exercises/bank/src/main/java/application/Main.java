@@ -1,5 +1,7 @@
 package application;
 
+import application.models.Account;
+
 import java.util.Locale;
 import java.util.Scanner;
 

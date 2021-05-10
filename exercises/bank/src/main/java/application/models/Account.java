@@ -1,10 +1,13 @@
-package application;
+package application.models;
 
 public class Account {
     private Long number;
     private String holder;
-    private double balance;
+    protected double balance;
     private final int tax = 5;
+
+    public Account() {
+    }
 
     public Account(Long number, String holder) {
         this.number = number;
@@ -26,9 +29,17 @@ public class Account {
         balance += value;
     }
 
+    public void setInitialDeposit(double value) {
+        deposit(value);
+    }
+
     public void withDraw(double value) {
         balance -= value;
         applyTaxToWithdraw();
+    }
+
+    public double getBalance() {
+        return balance;
     }
 
     public void applyTaxToWithdraw() {
