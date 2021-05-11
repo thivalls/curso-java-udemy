@@ -1,0 +1,15 @@
+
+U
+java:S1128"?Remove this unused import 'application.models.BusinessAccount'.(ÒÃµ®
+J
+java:S6212"/Declare this local variable with "var" instead.(ðÛ²¸øÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(öÒ¯ªþÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(Ð“©q
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ýï‚½úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(û×æ„
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ð¤ÆÃ8îô»À•/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ã³ÞÞþÿÿÿÿ8þß¾À•/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ýï‚½úÿÿÿÿ8þß¾À•/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Û€Äìùÿÿÿÿ8þß¾À•/
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(Ð¤ÆÃ8þß¾À•/
