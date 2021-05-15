@@ -2,11 +2,8 @@ package application;
 
 import application.model.entities.Reserva;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -28,8 +25,8 @@ public class Program {
         System.out.println("Digite a data final");
         Date dataFinal = sdf.parse(sc.next());
 
-        if(dataFinal.before(dataInicial)) {
-            System.out.println("Erro de reserva: A data final deve ser sempre maior do que a data inicial.");
+        if(!Reserva.validaData(dataInicial, dataFinal)) {
+            System.out.println(Reserva.getErroValidacao());
             System.out.println("Programa encerrado");
         } else {
             Reserva reserva = new Reserva(quarto, dataInicial, dataFinal);
@@ -41,13 +38,12 @@ public class Program {
             System.out.println("Digite a nova data final");
             Date novaDataFinal = sdf.parse(sc.next());
 
-            Date dataHoje = new Date();
-            if(novaDataInicial.before(dataHoje) || novaDataFinal.before(dataHoje)) {
-                System.out.println("Erro de reserva: As datas devem ser futuras.");
+            if(!Reserva.validaData(novaDataInicial, novaDataFinal)) {
+                System.out.println(Reserva.getErroValidacao());
                 System.out.println("Programa encerrado");
-            } else if(novaDataFinal.before(novaDataInicial)) {
-                System.out.println("Erro de reserva: A data final deve ser sempre maior do que a data inicial.");
-                System.out.println(reserva.toString());
+            } else if(!Reserva.validaData(novaDataInicial, novaDataFinal)) {
+                System.out.println(Reserva.getErroValidacao());
+                System.out.println("Programa encerrado");
             } else {
                 reserva.atualizaDataReserva(novaDataInicial, novaDataFinal);
                 System.out.println(reserva.toString());
