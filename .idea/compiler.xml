@@ -13,6 +13,7 @@
         <module name="exec-1" />
         <module name="polimorphism-1" />
         <module name="exec-1 (1)" />
+        <module name="interface" />
         <module name="exceptions" />
       </profile>
     </annotationProcessing>
@@ -23,6 +24,7 @@
       <module name="exec-1" target="11" />
       <module name="exec-1 (1)" target="11" />
       <module name="file" target="11" />
+      <module name="interface" target="11" />
       <module name="polimorphism" target="11" />
       <module name="polimorphism-1" target="11" />
     </bytecodeTargetLevel>
