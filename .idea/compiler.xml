@@ -8,10 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="polimorphism" />
         <module name="bank" />
-        <module name="exec-1 (1)" />
+        <module name="file" />
         <module name="composition" />
         <module name="exec-1" />
         <module name="polimorphism-1" />
+        <module name="exec-1 (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="composition" target="11" />
       <module name="exec-1" target="11" />
       <module name="exec-1 (1)" target="11" />
+      <module name="file" target="11" />
       <module name="polimorphism" target="11" />
       <module name="polimorphism-1" target="11" />
     </bytecodeTargetLevel>
