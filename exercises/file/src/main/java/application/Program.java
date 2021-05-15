@@ -1,26 +1,25 @@
 package application;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Program {
 
     public static void main(String[] args) throws FileNotFoundException {
-        File arquivo = new File("/Users/crowel/Documents/java/curso-java-udemy/exercises/file/src/main/java/application/files/in.txt");
 
-        try {
-            System.out.println("Iniciando leitura de arquivo");
-            Scanner sc = new Scanner(arquivo);
-            while (sc.hasNextLine()) {
-                System.out.println(sc.nextLine());
+        String[] linhasParaEscreverNoArquivo = new String[] {"Thiago", "Amanda", "Theo", "Bete"};
+        String path = "/Users/crowel/Documents/java/curso-java-udemy/exercises/file/src/main/java/application/files/out.txt";
+
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) {
+            for (String linha : linhasParaEscreverNoArquivo) {
+                bw.write(linha);
+                bw.newLine();
             }
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
+        } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            System.out.println("meu bloco final");
         }
+
 
     }
 
