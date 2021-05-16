@@ -1,0 +1,17 @@
+
+[
+java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(ÎğÁ¯
+D
+java:S6212
+"/Declare this local variable with "var" instead.(º”Ë
+V
+java:S1075
+"ARefactor your code to get this URI from a customizable parameter.(º”Ë
+N	java:S106"9Replace this use of System.out or System.err by a logger.(úºİ
+E
+java:S6212"/Declare this local variable with "var" instead.(ÎğÁ¯
+N	java:S106"9Replace this use of System.out or System.err by a logger.(š¾ø
+S	java:S106"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(á½ÁÒşÿÿÿÿ
+E
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
