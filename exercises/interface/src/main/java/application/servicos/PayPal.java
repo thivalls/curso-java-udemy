@@ -1,17 +1,17 @@
 package application.servicos;
 
-import application.modelo.Parcela;
-
 public class PayPal implements ServicoPagamento {
 
+    private static final double TAXA_JUROS = 0.01;
+    private static final double TAXA_PAGAMENTO = 0.02;
+
     @Override
-    public Double aplicaTaxaJuros(double valorParcela, int numeroParcela) {
-        System.out.println("dentro do aplica taxa juros" + " - " + valorParcela + " - " + numeroParcela);
-        return valorParcela + ((0.01 * numeroParcela) * valorParcela);
+    public double aplicaTaxaJuros(double valorParcela, int numeroParcela) {
+        return TAXA_JUROS * numeroParcela * valorParcela;
     }
 
     @Override
-    public Double aplicaTaxaPagamento(double valorParcela) {
-        return valorParcela + (valorParcela * 0.02);
+    public double aplicaTaxaPagamento(double valorParcela) {
+        return valorParcela * TAXA_PAGAMENTO;
     }
 }

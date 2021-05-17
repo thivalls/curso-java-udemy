@@ -4,7 +4,6 @@ import application.modelo.Contrato;
 import application.modelo.Parcela;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -18,17 +17,22 @@ public class ContratoServico {
     }
 
     public void processaContrato() throws ParseException {
-        for(int i=1; i <= contrato.getNumeroParcelas(); i++) {
-            double parcelaLimpa = contrato.getValorTotalContrato() / contrato.getNumeroParcelas();
-            double taxaComJuros = servicoPagamento.aplicaTaxaJuros(parcelaLimpa, i);
-            double taxaFinal = servicoPagamento.aplicaTaxaPagamento(taxaComJuros);
-            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        for (int i = 1; i <= contrato.getNumeroParcelas(); i++) {
+            double parcelaBase = contrato.getValorTotalContrato() / contrato.getNumeroParcelas();
+            double taxaComJuros = parcelaBase + servicoPagamento.aplicaTaxaJuros(parcelaBase, i);
+            double taxaFinal = taxaComJuros + servicoPagamento.aplicaTaxaPagamento(taxaComJuros);
 
-//            Calendar cal = Calendar.getInstance();
-//            cal.setTime(contrato.getDataContrato());
-//            cal.add(Calendar., 30 * i);
-//            Date novaDataParcela = Contrato.sdf.;
-            contrato.getParcelas().add(new Parcela(taxaFinal, sdf.parse("13/12/2021")));
+            // Aplicando regra de data
+            Date novaDataParcela = aplicaRegraData(contrato.getDataContrato(), i);
+
+            contrato.getParcelas().add(new Parcela(taxaFinal, novaDataParcela));
         }
+    }
+
+    private Date aplicaRegraData(Date date, int i) {
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        cal.add(Calendar.MONTH, i);
+        return cal.getTime();
     }
 }

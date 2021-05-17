@@ -1,6 +1,7 @@
 package application.modelo;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -10,7 +11,7 @@ public class Contrato {
     private Double valorTotalContrato;
     private int numeroParcelas;
 
-    private List<Parcela> parcelas;
+    private List<Parcela> parcelas = new ArrayList<>();
 
     public Contrato(long numeroContrato, Date dataContrato, Double valorTotalContrato, int numeroParcelas) {
         this.numeroContrato = numeroContrato;
@@ -49,10 +50,6 @@ public class Contrato {
 
     public List<Parcela> getParcelas() {
         return parcelas;
-    }
-
-    public void setParcelas(List<Parcela> parcela) {
-        this.parcelas = parcela;
     }
 
     public int getNumeroParcelas() {

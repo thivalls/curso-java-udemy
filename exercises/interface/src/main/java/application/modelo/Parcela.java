@@ -1,12 +1,15 @@
 package application.modelo;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Parcela {
     private Double valor;
     private Date vencimento;
 
-    public Parcela(Double valor, Date vencimento) {
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+    public Parcela(double valor, Date vencimento) {
         this.valor = valor;
         this.vencimento = vencimento;
     }
@@ -29,9 +32,6 @@ public class Parcela {
 
     @Override
     public String toString() {
-        return "Parcela{" +
-                "valor=" + valor +
-                ", vencimento=" + vencimento +
-                '}';
+        return sdf.format(vencimento) + " - $" + valor;
     }
 }

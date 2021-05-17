@@ -3,6 +3,6 @@ package application.servicos;
 import application.modelo.Parcela;
 
 public interface ServicoPagamento {
-    public Double aplicaTaxaJuros(double valorParcela, int numeroParcela);
-    public Double aplicaTaxaPagamento(double valorParcela);
+    double aplicaTaxaJuros(double valorParcela, int numeroParcela);
+    double aplicaTaxaPagamento(double valorParcela);
 }

@@ -15,15 +15,3 @@ e
 5exercises/file/src/main/java/application/Program.java,3/9/390a5de85dbe5c308e90caf77f6c9c52cbfc33f6
 K
 exercises/interface/pom.xml,5/c/5c95879780b3ae139aed088c1d7b35aa30d719fc
-r
-Bexercises/interface/src/main/java/application/servicos/PayPal.java,0/5/05cca5bd1662adcd663b2fa57e9f46143cedfd96
-g
-7exercises/interface/src/main/java/application/Main.java,1/4/14f35cfa704378c09b7e57dba3ee094b6bfd94cd
-r
-Bexercises/interface/src/main/java/application/modelo/Contrato.java,7/7/77666f12ba52ef8962538286423117da13b7fd98
-q
-Aexercises/interface/src/main/java/application/modelo/Parcela.java,6/0/60764b293bdd4aa466be7eedcd6a580e67bc0026
-|
-Lexercises/interface/src/main/java/application/servicos/ServicoPagamento.java,5/8/58f21cca8706e2aa1d2350525dc689668a5ac527
-{
-Kexercises/interface/src/main/java/application/servicos/ContratoServico.java,c/8/c85d3d6a66c223b656c2a72f378cad4530c22ece
