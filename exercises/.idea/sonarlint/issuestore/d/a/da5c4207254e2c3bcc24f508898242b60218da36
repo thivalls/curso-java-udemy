@@ -1,6 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óûæˆûÿÿÿÿ8¾†×¿•/
-r	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á©Æèüÿÿÿÿ8¼þÜ¿•/
-N	java:S106)"9Replace this use of System.out or System.err by a logger.(ÝµÜü
-X
-java:S1144"6Remove this unused private "increaseLoanLimit" method.(Óûæˆûÿÿÿÿ8ÅþÜ¿•/

@@ -1,29 +1,0 @@
-
-G
-java:S54110"*Use the primitive boolean expression here.(ÅÉî8Æµ¿•/
-J
-java:S6212"/Declare this local variable with "var" instead.(ğÛ²¸øÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(á§æ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(µ‡»¼úÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Ò¹Şıÿÿÿÿ
-Q
-java:S6212"/Declare this local variable with "var" instead.(¡®Ìäşÿÿÿÿ8Ìµ¿•/
-M	java:S106"9Replace this use of System.out or System.err by a logger.(û¨
-E
-java:S6212"/Declare this local variable with "var" instead.(Ú²’
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÏÅŸáÿÿÿÿÿ
-E
-java:S6212 "/Declare this local variable with "var" instead.(î¶™÷
-S	java:S106""9Replace this use of System.out or System.err by a logger.(Âé’ùÿÿÿÿ
-N	java:S106%"9Replace this use of System.out or System.err by a logger.(ïØñÒ
-J
-java:S6212&"/Declare this local variable with "var" instead.(çùŸ»şÿÿÿÿ
-S	java:S106("9Replace this use of System.out or System.err by a logger.(Âé’ùÿÿÿÿ
-N	java:S106*"9Replace this use of System.out or System.err by a logger.(¯‰Ö€
-N	java:S106."9Replace this use of System.out or System.err by a logger.(¸ÛÊ˜
-J
-java:S6212/"/Declare this local variable with "var" instead.(Ö†Ä™úÿÿÿÿ
-S	java:S1061"9Replace this use of System.out or System.err by a logger.(ÃûÅ­úÿÿÿÿ
-N	java:S1063"9Replace this use of System.out or System.err by a logger.( ší„
-N	java:S1067"9Replace this use of System.out or System.err by a logger.(ÿ½À¿
-S	java:S1068"9Replace this use of System.out or System.err by a logger.(—Ò©úÿÿÿÿ
