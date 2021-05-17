@@ -1,16 +1,0 @@
-
-E
-java:S6212"/Declare this local variable with "var" instead.(Šñ†Ú
-W
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(Šñ†Ú
-p
-java:S4042"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(‹¾»¤üÿÿÿÿ8ÂåÝŽ—/
-\	java:S899";Do something with the "boolean" value returned by "delete".(‹¾»¤üÿÿÿÿ8ÂåÝŽ—/
-J
-java:S6212"/Declare this local variable with "var" instead.(«òùýþÿÿÿÿ
-G
-java:S1612",Replace this lambda with a method reference.(ƒ˜öŠúÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ƒ˜öŠúÿÿÿÿ
-B
-java:S1612",Replace this lambda with a method reference.(×ýôœ
-U	java:S106"9Replace this use of System.out or System.err by a logger.(×ýôœ8äŽÐŽ—/
