@@ -3,6 +3,7 @@ package application;
 import application.modelo.Contrato;
 import application.modelo.Parcela;
 import application.servicos.ContratoServico;
+import application.servicos.PagSeguro;
 import application.servicos.PayPal;
 import application.servicos.ServicoPagamento;
 
@@ -38,6 +39,7 @@ public class Main {
         Contrato contrato = new Contrato(numeroContrato, dataContrato, totalContrato, numeroParcelas);
 
         ServicoPagamento servicoPagamento = new PayPal();
+        //ServicoPagamento servicoPagamento = new PagSeguro();
         ContratoServico contratoServico = new ContratoServico(contrato, servicoPagamento);
 
         contratoServico.processaContrato();
