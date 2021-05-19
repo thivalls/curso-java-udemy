@@ -1,0 +1,4 @@
+Tenis, 200.00
+Fritadeira, 400.00
+Microondas, 600.00
+Notebook, 1900.00
