@@ -1,12 +1,9 @@
 package application.exec2;
 
-import application.exec2.Curso;
-
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class main {
+public class main2 {
     public static void main(String[] args) {
         Student stud1 = new Student("Thiago");
         Student stud2 = new Student("Thalita");
