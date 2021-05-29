@@ -1,4 +1,4 @@
-package application;
+package application.comparator;
 
 import lombok.Data;
 
