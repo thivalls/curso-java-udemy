@@ -26,6 +26,14 @@ public class Product {
         product.setPrice(product.getPrice() * 3);
     }
 
+    public static String toUpperEstatico(Product product) {
+        return product.getName().toUpperCase();
+    }
+
+    public String toUpperNaoEstatico() {
+        return getName().toUpperCase();
+    }
+
     public void multiplicaPor3NaoEstatico() {
         this.setPrice(getPrice() * 3);
     }
