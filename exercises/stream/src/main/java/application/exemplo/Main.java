@@ -1,4 +1,4 @@
-package application;
+package application.exemplo;
 
 import java.util.Arrays;
 import java.util.List;
